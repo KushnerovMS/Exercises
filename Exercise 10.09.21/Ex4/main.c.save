@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void getMaxValue(short * maxVal);
+
+int main()
+{
+    short maxValue;
+    maxValue = 0;
+    
+    getMaxValue(&maxValue);
+    
+    return 0;
+}
+
+void getMaxValue(short * maxVal)
+{
+    short currentVal = 0;
+    
+    while(scanf("%i",&currentVal))
+        
+    
+}
