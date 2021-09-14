@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Ex6 build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>14-09-2021 at 20:46.00</u><br />
+Build ended on: <u>14-09-2021 at 20:46.01</u><p />
+<b>-------------- Build: Debug in Ex6 (compiler: GNU GCC (MinGW) Compiler - Strict + Save (SINGLE FILES ONLY, REGUIRES GIT))---------------</b><br />
+g++git-auto.bat "D:\C projects\Exercise 10.09.21\Ex6\main.c" -o bin\Debug\Ex6.exe  -Wall  -g  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC<br />
+------------------------------------------------------------------------------------------------------<br />
+Compilation ERRORS:<br />
+<br />
+In file included from D:\C projects\Exercise 10.09.21\Ex6\main.c:3:0:<br />
+D:\C projects\Exercise 10.09.21\Ex6\bigValues.c: In function 'char* init()':<br />
+<font color="#0000ff">D:\C projects\Exercise 10.09.21\Ex6\bigValues.c:6:8: warning: no previous declaration for 'char* init()' [-Wmissing-declarations]</font><br />
+ char * init()<br />
+        ^<br />
+D:\C projects\Exercise 10.09.21\Ex6\bigValues.c: In function 'char* iplus(char*, int)':<br />
+<font color="#0000ff">D:\C projects\Exercise 10.09.21\Ex6\bigValues.c:14:7: warning: no previous declaration for 'char* iplus(char*, int)' [-Wmissing-declarations]</font><br />
+ char* iplus(char* valp, int a)<br />
+       ^<br />
+<font color="#0000ff">D:\C projects\Exercise 10.09.21\Ex6\bigValues.c:24:27: warning: conversion to 'char' from 'int' may alter its value [-Wconversion]</font><br />
+         valp[i] = helpVal % 100;<br />
+                           ^<br />
+<font color="#0000ff">D:\C projects\Exercise 10.09.21\Ex6\bigValues.c:25:21: warning: conversion to 'char' from 'int' may alter its value [-Wconversion]</font><br />
+         valp[i + 1] += helpVal / 100;<br />
+                     ^<br />
+D:\C projects\Exercise 10.09.21\Ex6\bigValues.c: In function 'char* imultiplicate(char*, int)':<br />
+<font color="#0000ff">D:\C projects\Exercise 10.09.21\Ex6\bigValues.c:30:7: warning: no previous declaration for 'char* imultiplicate(char*, int)' [-Wmissing-declarations]</font><br />
+ char* imultiplicate(char* valp, int a)<br />
+       ^<br />
+D:\C projects\Exercise 10.09.21\Ex6\bigValues.c: In function 'int printBigVal(char*)':<br />
+<font color="#0000ff">D:\C projects\Exercise 10.09.21\Ex6\bigValues.c:52:5: warning: no previous declaration for 'int printBigVal(char*)' [-Wmissing-declarations]</font><br />
+ int printBigVal(char* valp)<br />
+     ^<br />
+------------------------------------------------------------------------------------------------------<br />
+Autosaving to the Git repository in D:/C projects/Exercise 10.09.21/Ex6/.git-auto/... <br />
+Output size is 31,44 KB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minutes, 0 seconds)</font><br />
+<font color="#0000ff">0 errors, 6 warnings (0 minutes, 0 seconds)</font><br />
+</tt>
+</body>
+</html>
