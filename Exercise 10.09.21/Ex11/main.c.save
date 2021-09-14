@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void printRombus(int, char);
+
+int main()
+{
+    int width = 0;
+
+    scanf("%i",&width);
+    
+    printRhombus(width, '+');
+    return 0;
+}
+
+void printCenterLine(int strLength, int length, char c)
+{
+}
+
+void printRombus(int width,char c)
+{
+    
+}
