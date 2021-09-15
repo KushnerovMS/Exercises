@@ -17,7 +17,10 @@ int main()
 
         for(int j = 0; j < i; j++)
             if(n % snumb[j] == 0)
+            {
                 check = 0;
+                break;
+            }
 
         if(check)
             snumb[i++] = n;
