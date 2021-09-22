@@ -5,7 +5,7 @@ const int MAX_SIZE = 1000;
 
 void getArray(int *arr, int length);
 void sortArray(int *arr, int length);
-void copyArray(sortNumb, numb);
+void copyArray(int *newArr, int *arr, int length);
 
 int main()
 {
@@ -21,15 +21,17 @@ int main()
 
     printf("Enter count of max numbers: ");
     scanf("%d", &maxCount);
-    
+
     int sortNumb[MAX_SIZE] = {};
-    
-    copyArray(sortNumb, numb, numCou);
+
+    copyArray(sortNumb, numb, numCount);
 
     sortArray(sortNumb, numCount);
 
-    int bound = numb[numCount - maxCount];
-    printf("%d ", bound);
+    int bound = sortNumb[numCount - maxCount];
+    int minCount = 0;
+    for(int i = numCount - maxCount; i < length && sortNumb[i] == bound; i++)
+        mincount ++;
 
     for(int i = 0; i < numCount; i ++)
         if(numb[i] >= bound)
@@ -65,4 +67,11 @@ void sortArray(int *arr, int length)
             arr[i] = a;
         }
     }
+}
+
+void copyArray(int *newArr, int *arr, int length)
+{
+    int *arrEnd = arr + length;
+    while(arr < arrEnd)
+        *(newArr++) = *(arr++);
 }

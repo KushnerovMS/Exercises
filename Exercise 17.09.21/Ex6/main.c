@@ -29,10 +29,15 @@ int main()
     sortArray(sortNumb, numCount);
 
     int bound = sortNumb[numCount - maxCount];
+    int minCount = 0;
+    for(int i = numCount - maxCount; i < numCount && sortNumb[i] == bound; i++)
+        minCount ++;
 
     for(int i = 0; i < numCount; i ++)
-        if(numb[i] >= bound)
+    {
+        if(numb[i] >= bound && (numb[i] != bound || minCount-- > 0))
             printf("%d ", numb[i]);
+    }
 
     return 0;
 }
