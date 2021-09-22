@@ -36,7 +36,7 @@ int main()
             bestSweetCount = boxCount*boxes[i].sweetCount;
             bestBox = i;
         }
-        if(boxCount > bestBoxCount)
+        else if(boxCount > bestBoxCount)
         {
             bestBoxCount = boxCount;
             bestSweetCount = bestBoxCount*boxes[i].sweetCount;
