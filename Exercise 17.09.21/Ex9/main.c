@@ -26,13 +26,20 @@ int main()
 
     int bestBox = 0;
     int bestBoxCount = 0;
+    int bestSweetCount = 0;
 
     for(int i = 0; i < boxCount; i ++)
     {
         int boxCount = moneyCount / (boxes[i].price);
+        if(boxCount == bestBoxCount && bestSweetCount < boxCount*boxes[i].sweetCount)
+        {
+            bestSweetCount = boxCount*boxes[i].sweetCount;
+            bestBox = i;
+        }
         if(boxCount > bestBoxCount)
         {
             bestBoxCount = boxCount;
+            bestSweetCount = bestBoxCount*boxes[i].sweetCount;
             bestBox = i;
         }
     }

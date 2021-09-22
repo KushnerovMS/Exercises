@@ -23,7 +23,7 @@ int main()
     }
 
     scanf("%d", &moneyCount);
-    
+
     int bestBox = 0;
     int bestBoxCount = 0;
 
@@ -36,7 +36,7 @@ int main()
             bestBox = i;
         }
     }
-    
+
     printf("%d %d", bestBoxCount, bestBoxCount*boxes[bestBox].sweetCount);
 
     return 0;
