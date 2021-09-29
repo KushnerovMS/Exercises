@@ -1,0 +1,18 @@
+//Kushnerov MiKhail B01-107
+#include <stdio.h>
+#include <stdlib.h>
+
+char leveling(char c);
+
+int main()
+{
+    return 0;
+}
+
+char leveling(char c)
+{
+    if (c >= 'A' && c <= 'Z')
+        return c - 'A' + 'a';
+    else
+        return c;
+}

@@ -1,0 +1,43 @@
+//Kushnerov Michail B01 -107
+#include <stdio.h>
+#include <stdlib.h>
+
+unsigned long long int nonacci(unsigned int n);
+
+int main()
+{
+    unsigned int number = 0;
+
+    scanf("%u", &number);
+
+    unsigned long long int nan = nonacci(number);
+
+    printf("nonacci number numbered %u is %llu\n", number, nan);
+    return 0;
+}
+
+unsigned long long int nonacci(unsigned int n)
+{
+    unsigned long long int nonacci[] = {0, 0, 0, 0, 0, 0, 0, 1};
+    int length = sizeof(nonacci)/sizeof(unsigned int);
+
+    if(n <= length)
+        return nonachi[n - 1];
+
+    while(n -- > length)
+    {
+        printf("%iu/n", n);
+
+        unsigned long long int a = nonacci[0];
+
+        for(int i = 0; i < length - 1; i++)
+            nonachi[i] = nonachi[i + 1];
+
+        nonachi[length - 1] = a;
+
+        for(int i = 0; i < length - 1; i++)
+            nonachi[length - 1] += nonachi[i];
+    }
+
+    return nonachi[length - 1];
+}
