@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1634756560 source:d:\c projects\exercise 15.10.21\func_fib\main.c
+	<stdio.h>
+	<stdlib.h>
+
