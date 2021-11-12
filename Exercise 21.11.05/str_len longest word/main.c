@@ -7,7 +7,7 @@ int main()
 {
     char* s1 = (char*) calloc (N + 1, sizeof (char));
     char* s2 = (char*) calloc (N + 1, sizeof (char));
-    char maxLen = 0;
+    int maxLen = 0;
 
     while (scanf ("%1000s", s1) == 1)
     {
