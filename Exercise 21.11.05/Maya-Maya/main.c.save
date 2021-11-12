@@ -6,55 +6,52 @@ int main()
     int c = 0;
     int number = 0;
 
-    /*
-    for (int digit = 0, mult = 1, isn = 0; (c = getchar ()) != EOF;)
+    for (int digit = 0, mult = 1, k = 0; (c = getchar ()) != EOF;)
     {
-        if (isn)
-        {
-            if (c == '\n')
-            {
-                number += digit * mult;
-                break;
-            }
-            else
-                isn = 0;
-        }
-
         switch (c)
         {
             case '*':
-                if (isn)
-                {
-                    number += digit * mult;
-                    digit = 0;
-                    mult *= 20;
-                }
+                k = 1
                 digit ++;
                 break;
             case '-':
                 digit += 5;
                 break;
             case '@':
+                k = 0;
                 number += digit * mult;
                 digit = 0;
                 mult *= 20;
                 break;
             case '\n':
-                isn = 1;
+                if (k)
+                
                 break;
         }
     }
-    */
 
+    /*
     for (int digit = 0, mult = 1, k = 1; k;)
     {
         k = 0;
-        char buf[5];
-        while (scanf ("%[-]", buf) == 1)
+        char buff[5];
+        while (scanf ("%[-]", buff) == 1)
+        {
+            k = 1;
             digit += 5;
-            
-        while (
-    }
+        }
+
+        if (scanf ("%s", buff) == 1)
+        {
+            if (*buff != '@')
+                digit += strlen (buff);
+                
+        }
+
+        number += digit + mult;
+        digit = 0;
+        mult *= 20;
+    } */
 
     printf ("%d", number);
     return 0;
