@@ -6,14 +6,13 @@ int main()
     int c = 0;
     int number = 0;
 
-    for (int digit = 0, mult = 1, deltaMult = 20, k = 0; (c = getchar ()) != EOF;)
+    for (int mult = 1, deltaMult = 20, k = 0; (c = getchar ()) != EOF;)
     {
         switch (c)
         {
             case '*':
                 k = 1;
                 number += mult;
-                //digit ++;
                 break;
             case '-':
                 number += 5 * mult;
