@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1636172638 source:d:\c projects\exercise 21.11.05\names\main.c
+	<stdio.h>
+	<stdlib.h>
+	<Windows.h>
+	<ctype.h>
+

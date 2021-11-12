@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1636666942 source:d:\c projects\exercise 21.11.05\maya-maya\main.c
+	<stdio.h>
+	<stdlib.h>
+
