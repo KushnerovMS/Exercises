@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 const char* direction[5] = {"North",
                             "South",
