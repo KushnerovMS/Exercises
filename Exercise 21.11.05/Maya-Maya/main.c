@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
@@ -34,29 +33,6 @@ int main()
                 break;
         }
     }
-
-    /*
-    for (int digit = 0, mult = 1, k = 1; k;)
-    {
-        k = 0;
-        char buff[5];
-        while (scanf ("%[-]", buff) == 1)
-        {
-            k = 1;
-            digit += 5;
-        }
-
-        if (scanf ("%s", buff) == 1)
-        {
-            if (*buff != '@')
-                digit += strlen (buff);
-
-        }
-
-        number += digit + mult;
-        digit = 0;
-        mult *= 20;
-    } */
 
     printf ("%d", number);
     return 0;
