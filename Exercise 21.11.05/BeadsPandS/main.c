@@ -1,30 +1,59 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 #define N 1000
 
-char* getPattern (const char* str);
+const char* getPattern (const char* str);
+int isSymmetricStr (const char* str);
 
 int main()
 {
     char str[N] = {};
     scanf ("%s", str);
+    //FILE* file;     ахаха
+    const char* pattern = getPattern (str);
 
-    printf("%S", getPattern (str));
+    if (pattern == 0)
+    {
+        printf ("NO");
+        return 0;
+    }
+
+    int patternLen = isSymmetricStr (pattern);
+
+    if (patternLen > 0)
+        printf ("%s %d", pattern, patternLen);
+    else
+        printf ("NO");
     return 0;
 }
 
-char* getPattern (const char* str)
+const char* getPattern (const char* str)
 {
     int patternLen = 1;
-    int i = 0;
-    for (; str[i] != '\0'; i ++)
+    int strLen = 0;
+    for (; str[strLen] != '\0'; strLen ++)
     {
-        if (str[i] != str[i % patternLen])
-            patternLen = i + 1;
+//        printf ("%d %d %d\n", strLen, patternLen, strLen % patternLen);
+        if (str[strLen] != str[strLen % patternLen])
+            patternLen ++;
     }
 
-  //  printf ("%d", patternLen);
+//    printf ("%d %d\n", strLen, patternLen);
 
-    return str + i - patternLen;
+    return (strLen % patternLen != 0)? 0 : str + strLen - patternLen;
+}
+
+int isSymmetricStr (const char* str)
+{
+    int len = strlen (str);
+    const char* strEnd = str + len - 1;
+
+    while (str < strEnd)
+    {
+        if (*(str ++) != *(strEnd --))
+            return 0;
+    }
+
+    return len;
 }
